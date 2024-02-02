@@ -1,6 +1,6 @@
 
 
-.grid-container{ display: grid;
+.grid-container{ display: grid; height: 100vh;
    grid-template-columns: auto auto auto ;
     grid-template-areas: 
     ' header header header' 
@@ -11,8 +11,10 @@
 
     .header{ 
         grid-area: header;
-        background-color: rgb(255, 255, 255);
+        background-color:rgb(215, 193, 244);
         padding: 30px; text-align: center;
+        font-size: 25px;
+        font-family: roboto;
 
         }
         .sidebar{
@@ -22,19 +24,19 @@
         }
         .main{
         grid-area: main;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(215, 193, 244);
         }
         .footer{
         grid-area: footer;
-        background-color: #66f;
+        background-color: rgb(195, 195, 246);
         }
 
 
           .producto img {
-            width: 300px; 
-            height: 300px; 
-            border-radius: 15%; 
-            padding: 20px;
+            width: 350px; 
+            height: 350px; 
+            border-radius: 8%; 
+            padding: 15px;
            
           
           }
@@ -43,7 +45,7 @@
             margin: 15px 0; 
             text-align: center;
             font-family: roboto;
-            font-size: 15px;
+            font-size: 18px;
           }
 
           
@@ -57,24 +59,24 @@
             font-size: 15px;}
 
           .sidebar {
-            background-color: #dfcef7;
-            color: #fff;
+            background-color: #b7d9f5;
+            color: #ffffff;
             flex: 0 0 200px; /* Tamaño fijo de la barra lateral */
          
         }
 
             .footer {
-                background-color: #380052;
-                color: #fff;
+                background-color: #ddbdeb;
+                color: #000000;
                 padding: 20px;
                 text-align: center;
               }
 
               button {
-                background-color: #dc9ee7; 
+                background-color: #EB85BB; 
                 border: none; 
                 border-radius: 5px;
-                color: white; 
+                color: rgb(255, 255, 255); 
                 padding: 10px 20px; 
                 text-align: center; 
                 text-decoration: none; 
@@ -90,8 +92,10 @@
                 background-color: #9245a0; 
               }
 
-              .menu-item:hover {background-color: #9245a0;}
-.menu-item {font-family: 'roboto', cursive;}
+              .menu-item:hover {background-color: #0265fa;}
+.menu-item {font-family: 'roboto', cursive;
+color: rgb(0, 0, 0);}
+h3 {color: rgb(0, 0, 0);}
 
 .grid-productos {display: grid;
   grid-template-columns: auto auto auto;
@@ -102,8 +106,8 @@
     gap: 15px}
 
     .producto {
-      border: 1px solid grey;
-      background-color: rgb(245, 247, 246);
+      border: 2px solid rgb(0, 0, 0);
+      background-color: #f7f7f6;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -112,3 +116,4 @@
       border-radius: 5px;
       }
 
+  
