@@ -1,0 +1,114 @@
+
+
+.grid-container{ display: grid;
+   grid-template-columns: auto auto auto ;
+    grid-template-areas: 
+    ' header header header' 
+    ' sidebar main main' 
+    ' footer footer footer'  
+     ;}
+
+
+    .header{ 
+        grid-area: header;
+        background-color: rgb(255, 255, 255);
+        padding: 30px; text-align: center;
+
+        }
+        .sidebar{
+        grid-area: sidebar;
+        background-color: rgb(242, 245, 243);
+        padding: 5px;
+        }
+        .main{
+        grid-area: main;
+        background-color: rgb(255, 255, 255);
+        }
+        .footer{
+        grid-area: footer;
+        background-color: #66f;
+        }
+
+
+          .producto img {
+            width: 300px; 
+            height: 300px; 
+            border-radius: 15%; 
+            padding: 20px;
+           
+          
+          }
+        
+          .producto p {
+            margin: 15px 0; 
+            text-align: center;
+            font-family: roboto;
+            font-size: 15px;
+          }
+
+          
+          .menu {
+            display: flex; 
+            flex-direction: column; /* para que el listado esté en vertical */
+            gap: 10px; 
+          }
+          .menu-item { 
+            font-family: roboto;
+            font-size: 15px;}
+
+          .sidebar {
+            background-color: #dfcef7;
+            color: #fff;
+            flex: 0 0 200px; /* Tamaño fijo de la barra lateral */
+         
+        }
+
+            .footer {
+                background-color: #380052;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+              }
+
+              button {
+                background-color: #dc9ee7; 
+                border: none; 
+                border-radius: 5px;
+                color: white; 
+                padding: 10px 20px; 
+                text-align: center; 
+                text-decoration: none; 
+                display: inline-block; 
+                font-size: 16px; 
+                margin: 4px 2px; 
+                cursor: pointer; 
+                width: 80%;
+            
+                
+              }
+              button:hover {
+                background-color: #9245a0; 
+              }
+
+              .menu-item:hover {background-color: #9245a0;}
+.menu-item {font-family: 'roboto', cursive;}
+
+.grid-productos {display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px}
+
+  .grid-productos {display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px}
+
+    .producto {
+      border: 1px solid grey;
+      background-color: rgb(245, 247, 246);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+      border-radius: 5px;
+      }
+
